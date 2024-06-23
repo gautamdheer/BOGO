@@ -28,19 +28,21 @@ Build the Docker images and start the containers:
 
 ```sh
 docker-compose up --build -d
-
+```
 
 Install Laravel dependencies using Composer inside the Docker container:
 
 ```sh
 docker-compose exec app composer install
+```
 
 Generate the Laravel application key:
 ```sh
 docker-compose exec app php artisan key:generate
+```
 
 Run database migrations if needed:
 ```sh
 docker-compose exec app php artisan migrate
-
+```
 
